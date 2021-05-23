@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lan="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Paga Crocodile Pond Survey Form </title>
+   <link rel="stylesheet" type="text/css" href="styles.css"> 
+  
+</head>
+<body>
+   <main>
+      <h1>PagaCrocodilePond Survey Form</h1>
+      <p style="text-align:center">Thank you for taking the time to fill this form</p>
+	
+      <!-- the main container for the forms-->
+      <div class="container">
+         <form>
+            <div class="subcontainer">
+               <label for="name" class="labelling">Name</label><br>
+               <input type="text" class="surveyForm" placeholder="name" required>
+            </div>
+             
+            <div class="subcontainer">
+               <label for="email" class="labelling">Email</label><br>
+               <input type="email" class="surveyForm" placeholder="email" required>
+            </div>
+            
+            <div class="subcontainer">
+               <label for="age" class="labelling">Age (optonal)</label><br>
+               <input type="number" placeholder="00" class="surveyForm" min="12" max="25" required>
+            </div>
+
+            <div class="subcontainer">
+               <label for="needs" class="labelling">What do you wanna buy?</label><br>
+               <input type="text" class="surveyForm">
+            </div>
+
+         <div>
+            <p>Would you recommend Paga crocodile pond to a friend?</p>
+            <form>
+               <input type="checkbox" id="choice1" name="choice1" value="Definitely" class="buttons">
+               <label for="choice1">Definitely</label><br>
+	       
+               <input type="checkbox" id="choice2" name="choice2" value="Maybe" class="buttons">
+               <label for="choice2">Maybe</label><br>
+
+               <input type="checkbox" id="choice3" name="choice3" value="Not Sure" class="buttons">
+               <label for="choice3">Not sure</label>
+            </form> 
+         </div>
+         
+         <div class="subcontainer">
+            <div>
+               <form>
+                  <label for="funSport">Which section of the pond do you prefer?</label>
+                  <select name="dropdown" id="dropdown" class="surveyForm">
+                     <option value="noPreference">No preference</option>
+                     <option value="khebabStand">Khebab stand</option>
+                     <option value="crocotouch">Crocodile touch</option>
+                     <option value="relaxation">Relaxation section</option>
+                  </select>
+               </form>
+            </div>
+         </div>
+         
+         <!-- bottons for selecting choices-->
+         <div class="subcontainer">
+            <p>What are your suggestions for the improvement of crocodile pond? (Choose all that apply)</p>
+            <div class="buttons">
+               <input type="radio" name="suggestions" value="Pricing" checked>
+               <label for="Pricing">Reduce pricing</label>
+            </div>
+	    <div class="buttons">
+	       <input type="radio" name="suggestions" value="Accomodation" checked>
+  	       <label for="Accomodation">Improve accomodation</label>
+	    </div>
+            <div class="buttons">
+	       <input type="radio" name="suggestions" value="Feedback" checked>
+  	       <label for="Feedback">Improve feedback</label>
+	    </div>
+         </div>
+
+	
+  	   <!-- Leaving comments-->
+	   <div class="subcontainer">
+	      <label for="comments">Leave your comments here</label>
+	      <textarea rows="6" cols="60" name="comment">Enter your comments ...</textarea>
+	   </div>
+        
+	<!-- submit the entire form-->
+	<div class="subcontainer">
+	<input type="submit" id="submit">
+	<div>
+      </div>
+   </main>
+</body>
+</html>
