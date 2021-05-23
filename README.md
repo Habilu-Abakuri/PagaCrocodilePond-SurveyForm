@@ -1,0 +1,1 @@
+A static survey form for paga crocodile pond tourist site. Customers can put in their concerns to the management.
